@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2028470415565354925}
   - component: {fileID: 2812287724108380338}
   - component: {fileID: 1394057832663195253}
+  - component: {fileID: 294906520170480029}
+  - component: {fileID: 5798945797038915670}
   m_Layer: 0
   m_Name: PT_Pine_Tree_03_green_LOD0
   m_TagString: Untagged
@@ -84,6 +86,43 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &294906520170480029
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649165938051307759}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28987363
+  m_Height: 8.416355
+  m_Direction: 1
+  m_Center: {x: 0.13785917, y: 3.683773, z: 0.0835534}
+--- !u!114 &5798945797038915670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649165938051307759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15332499e1ac64c44b21aa94516dd770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenTreePrefab: {fileID: 3125019525012259300, guid: c8b350551fbedc84c8025d7d29f3a018, type: 3}
+  breakForce: 1
 --- !u!1 &1720328307436147672
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6894979521318456901}
   - component: {fileID: 1870679391148259636}
+  - component: {fileID: 2909800009168598643}
   m_Layer: 0
   m_Name: PT_Pine_Tree_03_green
   m_TagString: Untagged
@@ -193,7 +233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6117071349010126079}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.004363368, w: 0.9999905}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -202,7 +242,7 @@ Transform:
   - {fileID: 8538897729451581637}
   - {fileID: 6236222268586821143}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.5}
 --- !u!205 &1870679391148259636
 LODGroup:
   m_ObjectHideFlags: 0
@@ -230,6 +270,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7013654394060798706}
   m_Enabled: 1
+--- !u!114 &2909800009168598643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6117071349010126079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15332499e1ac64c44b21aa94516dd770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenTreePrefab: {fileID: 3125019525012259300, guid: c8b350551fbedc84c8025d7d29f3a018, type: 3}
+  breakForce: 1
 --- !u!1 &8169898343365794049
 GameObject:
   m_ObjectHideFlags: 0
