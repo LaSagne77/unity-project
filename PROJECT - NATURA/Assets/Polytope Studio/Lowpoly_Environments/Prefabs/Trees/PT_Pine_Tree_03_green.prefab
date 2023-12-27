@@ -121,8 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15332499e1ac64c44b21aa94516dd770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokenTreePrefab: {fileID: 3125019525012259300, guid: c8b350551fbedc84c8025d7d29f3a018, type: 3}
-  breakForce: 1
+  woodPrefab: {fileID: 0}
+  woodCount: 3
+  dropForce: 5
 --- !u!1 &1720328307436147672
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +218,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6894979521318456901}
   - component: {fileID: 1870679391148259636}
-  - component: {fileID: 2909800009168598643}
   m_Layer: 0
   m_Name: PT_Pine_Tree_03_green
   m_TagString: Untagged
@@ -270,20 +270,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7013654394060798706}
   m_Enabled: 1
---- !u!114 &2909800009168598643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6117071349010126079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15332499e1ac64c44b21aa94516dd770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  brokenTreePrefab: {fileID: 3125019525012259300, guid: c8b350551fbedc84c8025d7d29f3a018, type: 3}
-  breakForce: 1
 --- !u!1 &8169898343365794049
 GameObject:
   m_ObjectHideFlags: 0
