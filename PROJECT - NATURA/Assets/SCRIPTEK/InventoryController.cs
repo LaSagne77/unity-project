@@ -2,18 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class InventoryController : MonoBehaviour
 {
-    public List<Item> items = new List<Item>();
+    private GameObject inventoryUI;
 
-    public void AddItem(Item item)
+    private void Start()
     {
-        // Add logic to check if the item is already in the inventory and update quantity
-        items.Add(item);
+        // Get a reference to the inventory UI game object
+        inventoryUI = GameObject.Find("MainInventory"); // Replace "InventoryUI" with the actual name of your inventory UI object
+        if (inventoryUI != null)
+        {
+            // Disable the inventory at the start
+            inventoryUI.SetActive(false);
+        }
     }
 
-    public void RemoveItem(Item item)
+    private void Update()
     {
-        items.Remove(item);
+        // Check for input or other conditions to toggle the inventory
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            ToggleInventory();
+        }
+    }
+
+    private void ToggleInventory()
+    {
+        // Toggle the visibility of the inventory
+        if (inventoryUI != null)
+        {
+            inventoryUI.SetActive(!inventoryUI.activeSelf);
+        }
     }
 }
